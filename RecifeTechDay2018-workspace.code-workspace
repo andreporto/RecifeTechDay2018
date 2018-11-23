@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "00-ListaDeTarefas-Projeto_criado_com_template_blank"
+		},
+		{
+			"path": "01-ListaDeTarefas-Como_personalizar_o_projeto"
+		},
+		{
+			"path": "02-ListaDeTarefas-Listando_conteudo"
+		},
+		{
+			"path": "03-ListaDeTarefas-Menu_slide_esquerdo"
+		},
+		{
+			"path": "04-ListaDeTarefas-Botao_na_barra_de_titulo"
+		},
+		{
+			"path": "05-ListaDeTarefas-Botao_slide_direito"
+		},
+		{
+			"path": "06-ListaDeTarefas-BONUS-Armazenamento_local"
+		}
+	],
+	"settings": {}
+}

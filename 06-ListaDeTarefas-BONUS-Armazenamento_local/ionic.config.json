@@ -1,0 +1,7 @@
+{
+  "name": "ListaDeTarefas",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

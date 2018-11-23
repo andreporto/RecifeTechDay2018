@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Lista de Tarefas
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="onAdicionar()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div *ngIf="tarefas && tarefas.length == 0">
+    <p>Não há tarefas.</p>
+  </div>
+  <ion-list>
+    <ion-item-sliding *ngFor="let tarefa of tarefas" #i>
+      <ion-item>
+        <h3>{{tarefa.nome}}</h3>
+      </ion-item>
+      <ion-item-options side="left">
+        <button ion-button color="danger" (click)="onExcluir(tarefa)">
+          <ion-icon name="trash"></ion-icon>
+          Excluir
+        </button>
+      </ion-item-options>
+      <ion-item-options side="right">
+        <button ion-button color="primary" (click)="onAlterar(tarefa, i)">
+          <ion-icon name="create"></ion-icon>
+          Alterar
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

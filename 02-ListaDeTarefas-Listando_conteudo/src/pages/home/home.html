@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Lista de Tarefas
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div *ngIf="tarefas.length == 0">
+    <p>Não há tarefas.</p>
+  </div>
+  <ion-list>
+    <ion-item *ngFor="let tarefa of tarefas">
+      <h3>{{tarefa.nome}}</h3>
+    </ion-item>
+  </ion-list>
+</ion-content>
